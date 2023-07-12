@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <!--fONT AWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!--GOOGLE FONTS= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Open+Sans:ital,wght@0,300;1,300&family=Oswald:wght@200;300;500&family=Quicksand:wght@300;400;700&display=swap"
+      rel="stylesheet">
+  <!--FAVICOM= -->
+  <link rel="icon" href="/img/icono.fav.ico">
+</head>
+
+<body>
+  <header>
+    <div class="menu-btn">
+        <i class ="fas fa-bars  "></i>
+    </div>
+    <div class="container">
+
+      <nav class="nav-main">
+        <img src="/img/icono.png" alt="Museo Logo" class="nav-brand">
+        <h1><a href="/index.html"> Museo</a>
+
+        </h1>
+        <ul class="nav-menu">
+          <li>
+            <a href="/assets/html/visita.html">Visita</a>
+          </li>
+
+          <li>
+            <a href="/assets/html/exhibiciones.html">Exhibiciones</a>
+          </li>
+
+          <li>
+            <a href="/assets/html/aboutus.html">About us</a>
+          </li>
+
+
+        </ul>
+
+       
+      </nav>
+
+  </header>
+  <main>
+    <form action="" method="post" id="form" onsubmit="return validar();">
+      <div class="form">
+        <h2 class="h1reg">Registro</h2>
+        <div class="grupo">
+          <label for="">Nombre</label>
+          <input type="text" name="" id="nombre" required ><span class="barra"></span>
+          </div>
+        <div class="grupo">
+          <label for="">Email</label>
+          <input type="email" name="" id="email" required ><span class="barra"></span>
+          
+        </div>
+        <div class="grupo">
+          <label for="">Password</label>
+          <input type="password" name="" id="password" required ><span class="barra"></span>
+                 
+        </div>
+        
+      </div>
+      <br>
+      <button type="submit">Suscribirte</button>
+      <p>¿Ya tienes cuenta? <a href="">Ingresa</a></p>
+    </form>
+
+
+  </main>
+  </div>
+<script src="/assets/main.js"></script>
+</body>
+
+</html>

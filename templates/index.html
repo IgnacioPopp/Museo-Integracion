@@ -1,0 +1,219 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Museo</title>
+    <!--fONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--FONT CSS-->
+    <link rel="stylesheet" href=" {% static './css/style.css'%}"/>
+    <!--GOOGLE FONTS= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Open+Sans:ital,wght@0,300;1,300&family=Oswald:wght@200;300;500&family=Quicksand:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!--FAVICOM= -->
+    <link rel="icon" href="./img/icono.fav.ico">
+
+
+</head>
+
+<body>
+    <div class="menu-btn" id="menu-btn">
+        <i class ="fas fa-bars  "></i>
+    </div>
+    <div class="container">
+
+        <nav class="nav-main">
+            <img src="./img/icono.png" alt="Museo Logo" class="nav-brand">
+            <h1>
+                <a href="/index.html">Museo</a href>
+            </h1>
+            <ul class="nav-menu">
+                <li>
+                    <a href="assets/html/visita.html">Visita</a>
+                </li>
+
+                <li>
+                    <a href="./assets/html/exhibiciones.html">Exhibiciones</a>
+                </li>
+
+                <li>
+                    <a href="./assets/html/aboutus.html">Quiénes Somos</a>
+                </li>
+
+                <li>
+                    <a href="./assets/html/Tickets.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <br>
+        <hr>
+
+
+        <header class="newsala">
+            <h2>Nueva sala </h2>
+            <p>El Museo Nacional de Bellas Artes presenta dos salas renovadas de exposición permanente donde se exhibirán 
+                cerca de 400 piezas prehispánicas, realizadas por las culturas del Noroeste Argentino entre los siglos V a. C. 
+                y XV de esta era, y obras de arte colonial. En este espacio se integra la colección del Museo Nacional 
+                de Bellas Artes y la colección del Ministerio de Relaciones Exteriores y Culto.
+            </p>
+            <a href="assets/html/nueva_sala.html" class="btn">Ver mas <i class="fa fa-angle-double-right "></i></a>
+
+
+        </header>
+        <!--GRIDNEWS-->
+        <div class="gridnews">
+            <div>
+                <img src="img/grid/ferrari3.jpg" alt="Grid1">
+                <h3>Novedades de mayo</h3>
+                <p>Gran inauguración de la muestra antológica de León Ferrari.</p>
+                <a href="assets/html/noticia_grid1.html">Ver más <i class="fa fa-angle-double-right "></i></a>
+            </div>
+            <div>
+                <img src="img/grid/picasso5.jpg" alt="Grid2">
+                <h3>Novedades de mayo </h3>
+                <p>Ya pueden visitarse las muestras dedicadas a Picasso y Dibujos antiguos de la colección del Bellas Artes.</p>
+                <a href="assets/html/noticia_grid2.html">Ver más <i class="fa fa-angle-double-right "></i></a>
+            </div>
+            <div>
+                <img src="img/grid/cine1.jpg" alt="grid3">
+                <h3>Novedades de mayo </h3>
+                <p>Bellas Artes Cine: Política y sociedad en la pantalla francesa.</p>
+                <a href="assets/html/noticia_grid3.html">Ver más <i class="fa fa-angle-double-right "></i></a>
+
+            </div>
+            <div>
+                <img src="img/grid/foto4.jpg" alt="grid4">
+                <h3>Novedades de mayo </h3>
+                <p>Fotografías de Alicia D’Amico del libro “Podría ser yo” se exhiben en el segundo piso.</p>
+                <a href="/assets/html/noticia_grid4.html">Ver más <i class="fa fa-angle-double-right "></i></a>
+            </div>
+
+        </div>
+
+        <br></br>
+        <br></br>
+        <br></br>
+
+        <section class="movimiento">
+            <div class="content">
+                <h2>Mujeres artistas en la colección del Museo</h2>
+                <p>Pinturas, esculturas, fotografías y grabados de los siglos XIX y XX.
+                    Un recorrido por un conjunto de obras de la colección del Museo realizadas por mujeres que dedicaron su vida a las artes visuales. </p>
+                <a href="/assets/html/mujeres.html" class="btn" >Ver más <i  class="fa fa-angle-double-right "> </i></a>
+            </div>
+        </section>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <section class="secciontragos">
+            <h1>Arte y Tragos</h1>
+            <p>Buscá el trago que más te inspire para realizar en tu casa, poné en el buscador el trago o alguno de sus ingredientes
+                y te brindaremos ideas sobre los que podés realizar.</p>
+            <br><br><br>
+                <head>
+                <title>Buscador de Tragos</title>
+            
+              </head>
+              <body>
+                <h1>Buscador de Tragos</h1>
+                
+                <input type="text" id="search" placeholder="Buscar tragos..."><button id="buscar"> Buscar</button>
+                <div id="results">
+                  
+                </div>
+                
+               <script>
+                    let searchText = document.getElementById("buscar")
+            
+                    const cleaner = (parentId)=>{
+                    let childs = document.querySelectorAll(`#${parentId} > *`);
+                    childs.forEach(e => e.remove())
+                    }
+            
+                    const inyector = (data , parentId)=>{
+                    
+                    cleaner(parentId)
+                    
+                    if (!data.drinks){
+                        let h1 = document.createElement("h4")
+                        h1.innerText = "No Data"
+                        document.getElementById(parentId).appendChild(h1)
+                        return 
+                    }
+                    
+                    /*manera simple y rapido*/
+                    data.drinks.forEach(drink =>{
+                    let div = document.createElement("div")
+                    div.innerHTML = `
+                    <h2>${drink.strDrink}</h2>
+                    <p>${drink.strInstructions}</p>
+                    `
+                    document.getElementById(parentId).appendChild(div)
+                    })
+                    
+            
+                    
+                    }
+            
+                    searchText.addEventListener("click", () =>{
+                    let input = document.getElementById("search")
+                    let data = input.value
+                    input.value = ""
+                    
+                    /*busqueda*/
+                    
+                    let ApiQuery = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${data}`
+                    
+                    fetch(ApiQuery)
+                    .then(data => data.json())
+                    .then(data => inyector(data,"results"))
+                    .catch(e => console.log(e))
+                    
+                    } )
+             
+                </script>
+            </body>
+            </html>
+        </section>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <section class="social">
+            <p>Seguinos en nuestras redes</p>
+            <div class="links">
+                <a href="https://www.facebook.com/MNBAArgentina">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/BellasArtesAR">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/bellasartesargentina/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+        </section>
+        <br>
+
+
+        <footer class="footer">
+
+        </footer>
+
+    </div>
+</body>
+
+</html>
