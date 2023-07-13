@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,11 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--FAVICOM= -->
-    <link rel="icon" href="/img/icono.fav.ico">
+    <link rel="icon" href="{% static './img/icono.fav.ico' %}">
     <!--fONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!--FONT CSS-->
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href=" {% static './css/style.css' %}"/>
     <!--GOOGLE FONTS= -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,34 +34,28 @@
     </div>
     <div class="container">
 
-        <nav class="nav-main">
-            <img src="/img/icono.png" alt="Museo Logo" class="nav-brand">
+         <nav class="nav-main">
+            <img src="{% static './img/icono.png' %}" alt="Museo Logo" class="nav-brand">
             <h1>
-                <a href="/index.html">Museo</a href>
-
+                <a href="{% url 'landing_page' %}">Museo</a href>
             </h1>
             <ul class="nav-menu">
-
                 <li>
-                    <a href="/assets/html/visita.html">Visita</a>
+                    <a href="{% url 'visita_page' %}">Visita</a>
                 </li>
 
                 <li>
-                    <a href="/assets/html/exhibiciones.html">Exhibiciones</a>
+                    <a href="{% url 'exhibiciones_page' %}">Exhibiciones</a>
                 </li>
 
                 <li>
-                    <a href="/assets/html/aboutus.html">Quiénes Somos</a>
+                    <a href="{% url 'aboutus_page' %}">Quiénes Somos</a>
                 </li>
 
                 <li>
-                    <a href="/assets/html/Tickets.html">Contacto</a>
+                    <a href="{% url 'tickets_page' %}">Contacto</a>
                 </li>
-                
             </ul>
-
-           
-
         </nav>
         <br>
         <hr>
@@ -82,11 +78,11 @@
                 </section>
                 <section>  
                     <div class="galeria">
-                        <img src="/img/mujeres/mujeres1.jpg" alt="ferrari1">
-                        <img src="/img/mujeres/mujeres2.jpg" alt="ferrari2">
-                        <img src="/img/mujeres/mujeres3.jpg" alt="ferrari3">
-                        <img src="/img/mujeres/mujeres4.jpg" alt="ferrari4">
-                        <img src="/img/mujeres/mujeres5.jpg" alt="ferrari5">
+                        <img src="{% static './img/mujeres/mujeres1.jpg' %}" alt="ferrari1">
+                        <img src="{% static './img/mujeres/mujeres2.jpg' %}" alt="ferrari2">
+                        <img src="{% static './img/mujeres/mujeres3.jpg' %}" alt="ferrari3">
+                        <img src="{% static './img/mujeres/mujeres4.jpg' %}" alt="ferrari4">
+                        <img src="{% static './img/mujeres/mujeres5.jpg' %}" alt="ferrari5">
                       </div>
                 </section>
             

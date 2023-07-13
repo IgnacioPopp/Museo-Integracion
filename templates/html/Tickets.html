@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro</title>
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href=" {% static './css/style.css' %}"/>
   <!--fONT AWESOME-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!--GOOGLE FONTS= -->
@@ -19,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Open+Sans:ital,wght@0,300;1,300&family=Oswald:wght@200;300;500&family=Quicksand:wght@300;400;700&display=swap"
       rel="stylesheet">
   <!--FAVICOM= -->
-  <link rel="icon" href="/img/icono.fav.ico">
+  <link rel="icon" href="{% static './img/icono.fav.ico' %}">
 </head>
 
 <body>
@@ -30,28 +32,28 @@
     <div class="container">
 
       <nav class="nav-main">
-        <img src="/img/icono.png" alt="Museo Logo" class="nav-brand">
-        <h1><a href="/index.html"> Museo</a>
+            <img src="{% static './img/icono.png' %}" alt="Museo Logo" class="nav-brand">
+            <h1>
+                <a href="{% url 'landing_page' %}">Museo</a href>
+            </h1>
+            <ul class="nav-menu">
+                <li>
+                    <a href="{% url 'visita_page' %}">Visita</a>
+                </li>
 
-        </h1>
-        <ul class="nav-menu">
-          <li>
-            <a href="/assets/html/visita.html">Visita</a>
-          </li>
+                <li>
+                    <a href="{% url 'exhibiciones_page' %}">Exhibiciones</a>
+                </li>
 
-          <li>
-            <a href="/assets/html/exhibiciones.html">Exhibiciones</a>
-          </li>
+                <li>
+                    <a href="{% url 'aboutus_page' %}">Quiénes Somos</a>
+                </li>
 
-          <li>
-            <a href="/assets/html/aboutus.html">About us</a>
-          </li>
-
-
-        </ul>
-
-       
-      </nav>
+                <li>
+                    <a href="{% url 'tickets_page' %}">Contacto</a>
+                </li>
+            </ul>
+        </nav>
 
   </header>
   <main>
@@ -82,7 +84,7 @@
 
   </main>
   </div>
-<script src="/assets/main.js"></script>
+<script src="{% static '.JS/main.js' %}"></script>
 </body>
 
 </html>

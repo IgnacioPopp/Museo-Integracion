@@ -99,7 +99,7 @@ hr {
 .newsala {
     width: 100%;
     height: 750px;
-    background: url('/img/Banner.jpg') no-repeat center center/cover;
+    background: url('../img/Banner.jpg') no-repeat center center/cover;
     padding-bottom: 50px;
     margin-bottom: 20px;
     display: flex;
@@ -171,7 +171,7 @@ hr {
 .movimiento {
     width: 100%;
     height: 600px;
-    background: url('/img/artemov.jpg');
+    background: url('../img/artemov.jpg');
     margin-bottom: 40px;
 
 }
@@ -412,7 +412,7 @@ input:focus~.barra::before {
 .banner2 {
     width: 100%;
     height: 550px;
-    background: url('/img/visita.jpg') no-repeat center center/cover;
+    background: url('../img/visita.jpg') no-repeat center center/cover;
     
     padding-bottom: 50px;
     margin-bottom: 20px;
@@ -425,7 +425,7 @@ input:focus~.barra::before {
     .banner3 {
         width: 100%;
         height: 550px;
-        background: url('/img/quienessomos.jpg') no-repeat center center/cover;
+        background: url('../img/quienessomos.jpg') no-repeat center center/cover;
         
         padding-bottom: 50px;
         margin-bottom: 20px;
@@ -438,7 +438,7 @@ input:focus~.barra::before {
     .banner4 {
         width: 100%;
         height: 550px;
-        background: url('/img/mnba1.jpg') no-repeat center center/cover;
+        background: url('../img/mnba1.jpg') no-repeat center center/cover;
          
          padding-bottom: 50px;
         margin-bottom: 20px;
@@ -451,7 +451,7 @@ input:focus~.barra::before {
         .banner5 {
             width: 100%;
             height: 550px;
-            background: url('/img/prehisp/nuevasala.jpg') no-repeat center center/cover;
+            background: url('../img/prehisp/nuevasala.jpg') no-repeat center center/cover;
              
              padding-bottom: 50px;
             margin-bottom: 20px;
@@ -464,7 +464,7 @@ input:focus~.barra::before {
         .banner6 {
             width: 100%;
             height: 550px;
-            background: url('/img/ferrari/ferrari7.jpg') no-repeat center center/cover;
+            background: url('../img/ferrari/ferrari7.jpg') no-repeat center center/cover;
                  
              padding-bottom: 50px;
             margin-bottom: 20px;
@@ -477,7 +477,7 @@ input:focus~.barra::before {
         .banner7 {
             width: 100%;
             height: 550px;
-            background: url('/img/picasso/picasso1.jpg') no-repeat center center/cover;
+            background: url('../img/picasso/picasso1.jpg') no-repeat center center/cover;
                      
             padding-bottom: 50px;
             margin-bottom: 20px;
@@ -490,7 +490,7 @@ input:focus~.barra::before {
         .banner8 {
             width: 100%;
             height: 550px;
-            background: url('/img/cine/cine1.jpg') no-repeat center center/cover;
+            background: url('../img/cine/cine1.jpg') no-repeat center center/cover;
                          
             padding-bottom: 50px;
             margin-bottom: 20px;
@@ -503,7 +503,7 @@ input:focus~.barra::before {
         .banner9 {
                 width: 100%;
                 height: 550px;
-                background: url('/img/foto/foto1.jpg') no-repeat center center/cover;
+                background: url('../img/foto/foto1.jpg') no-repeat center center/cover;
                              
                 padding-bottom: 50px;
                 margin-bottom: 20px;
@@ -516,7 +516,7 @@ input:focus~.barra::before {
         .banner10 {
             width: 100%;
             height: 550px;
-            background: url('/img/mujeres/mujeres6.jpg') no-repeat center center/cover;
+            background: url('../img/mujeres/mujeres6.jpg') no-repeat center center/cover;
                              
             padding-bottom: 50px;
             margin-bottom: 20px;
@@ -560,7 +560,7 @@ input:focus~.barra::before {
   .secciontragos {
     width: 100%;
     height: 550px;
-    background: url('/img/tragos.jpg') no-repeat center center/cover;
+    background: url('../img/tragos.jpg') no-repeat center center/cover;
                         
     padding-bottom: 50px;
     margin-bottom: 20px;

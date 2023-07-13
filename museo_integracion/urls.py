@@ -15,11 +15,23 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
-from .views import IndexPage
+from .views import IndexPage, AboutUs, Visita, Tickets, Exhibiciones, Mujeres, NoticiaGrid1, NoticiaGrid2, NoticiaGrid3, NoticiaGrid4, NuevaSala
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", IndexPage.as_view(), name="landing_page")
+    path("", IndexPage.as_view(), name="landing_page"),
+    path('aboutus/', AboutUs.as_view(), name="aboutus_page"),
+    path('visita/', Visita.as_view(), name="visita_page"),
+    path('tickets/', Tickets.as_view(), name='tickets_page'),
+    path('exhibiciones/', Exhibiciones.as_view(), name='exhibiciones_page'),
+    path('mujeres/', Mujeres.as_view(), name='mujeres_page'),
+    path('noticia_grid1/', NoticiaGrid1.as_view(), name='noticiagrid1_page'),
+    path('noticia_grid2/', NoticiaGrid2.as_view(), name='noticiagrid2_page'),
+    path('noticia_grid3/', NoticiaGrid3.as_view(), name='noticiagrid3_page'),
+    path('noticia_grid4/', NoticiaGrid4.as_view(), name='noticiagrid4_page'),
+    path('nueva_sala/', NuevaSala.as_view(), name='nuevasala_page')
 ]
+
+
